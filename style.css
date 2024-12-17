@@ -1,0 +1,68 @@
+.description {
+    display: none;
+  }
+  
+  #accessibleModal {
+    margin-bottom: 200px;
+  }
+  
+  body button {
+    padding: 12px;
+    width: 120px;
+    border-radius: 25px;
+    border: 2px solid;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  
+  /* body button:focus {
+    border: 2px solid orange    ;
+  } */
+  
+  .close,
+  #closeMenuBtn {
+    background-color: rgb(255, 250, 250);
+    color: lightgray;
+  }
+  
+  .open {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  header li {
+    background-color: lightslategray;
+  }
+  
+  header li a {
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    color: lightgrey;
+  }
+  
+  #menuButton {
+    background-color: lightgreen;
+    color: white;
+  }
+  
+  #menuContent {
+    transition: all ease-in-out 0.3s;
+  }
+  #menuContent {
+    display: none;
+  }
+  
+  #closeMenuBtn {
+    display: none;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }

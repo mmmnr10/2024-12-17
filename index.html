@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Uppgift 1.  -->
+    <div id="accessibleModal">
+      <div
+        class="description"
+        role="dialog"
+        aria-labelledby="accessibleModal"
+        aria-hidden="false"
+        aria-modal="true"
+      >
+        <button
+          id="closeModalBtn"
+          tabindex="1"
+          class="close"
+          aria-expanded="true"
+        >
+          Stäng
+        </button>
+
+        <h2 id="modalTitle">Exempel på modalfönster</h2>
+        <p>Här är lite text i modalfönstret.</p>
+      </div>
+      <button id="openModalBtn" tabindex="2" class="open" aria-expanded="false">
+        Öppna
+      </button>
+    </div>
+
+    <!-- Uppgift 2. -->
+    <dialog id="accessibleDialog" aria-labelledby="dialogTitle">
+      <h2 id="dialogTitle">
+        Exempel på tillgängligt modalfönster med &lt;dialog&gt;
+      </h2>
+      <p>Här är innehållet i modalfönstret.</p>
+      <button id="closeDialogBtn" class="close">Stäng</button>
+    </dialog>
+    <button id="openDialogBtn" class="open">Öppna</button>
+
+    
+
+
+    <!-- Uppgift 3. -->
+    <header>
+      <button id="menuButton" role="menu">Meny</button>
+      <button id="closeMenuBtn">Stäng</button>
+      <nav id="menuContent">
+        <ul tabindex="6">
+          <li><a role="menuitem" href="#">Hem</a></li>
+          <li><a role="menuitem" href="#">Om oss</a></li>
+          <li><a role="menuitem" href="#">Tjänster</a></li>
+          <li><a role="menuitem" href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="code.js"></script>
+  </body>
+</html>
